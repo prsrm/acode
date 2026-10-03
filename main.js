@@ -1,5 +1,5 @@
 import plugin from "./plugin.json"
-import * as p from "https://gnlow.dev/@prsrm/prsrm@0.1.0"
+import * as p from "https://gnlow.dev/@prsrm/prsrm@0.1.2"
 
 const editorThemes = acode.require("editorThemes")
 
@@ -19,17 +19,17 @@ acode.setPluginInit(
                     styles: {
                         "&": { color: p.snowy, backgroundColor: p.swamp },
                     },
-                    highlightStyle: createHighlightStyle({
+                    highlightStyle: createHighlightStyle([
                         { tag: t.content, color: p.snowy },
                         { tag: t.keyword, color: p.carro },
                         { tag: t.string, color: p.green },
-                        //{ tag: t.comment, color: p.snowy },
+                        { tag: t.comment, color: p.shado },
                         { tag: t.number, color: p.grape },
                         //{ tag: t.variableName, color: p.snowy },
-                        { tag: t.function(t.content, color: p.lemon },
+                        { tag: t.function(t.content), color: p.lemon },
                         { tag: t.typeName, color: p.azure },
                         { tag: t.className, color: p.azure },
-                    }),
+                    ]),
                 })
             },
         })

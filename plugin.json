@@ -1,6 +1,11 @@
 {
+    "$schema": "https://acode.app/schema/plugin/v0.1.0.json",
     "id": "dev.prsrm.acode",
     "name": "Prsrm",
     "version": "0.1.0",
-    "main": "main.js"
+    "main": "dist/main.js",
+    "icon": "icon.png",
+    "author": {
+        "name": "Gnlow"
+    }
 }
