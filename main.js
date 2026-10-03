@@ -1,5 +1,5 @@
 import plugin from "./plugin.json"
-import * as p from "https://gnlow.dev/@prsrm/prsrm@0.1.2"
+import * as p from "https://gnlow.dev/@prsrm/prsrm@0.1.5"
 
 const editorThemes = acode.require("editorThemes")
 
@@ -21,16 +21,37 @@ acode.setPluginInit(
                     },
                     highlightStyle: createHighlightStyle([
                         { tag: t.content, color: p.snowy },
+                        { tag: t.operator, color: p.carro },
                         { tag: t.keyword, color: p.carro },
+                        { tag: t.punctuation, color: p.carro },
                         { tag: t.string, color: p.green },
                         { tag: t.comment, color: p.shado },
                         { tag: t.number, color: p.grape },
                         //{ tag: t.variableName, color: p.snowy },
-                        { tag: t.function(t.content), color: p.lemon },
-                        { tag: t.typeName, color: p.azure },
-                        { tag: t.className, color: p.azure },
+                        { tag: t.function(t.name), color: p.lemon },
+                        { tag: t.typeName, color: p.ocean },
+                        { tag: t.className, color: p.coral },
+                        //{ tag: t.propertyName, color: p.cherr },
+                        { tag: t.regexp, color: p.azure },
                     ]),
                 })
+            },
+            config: {
+                name: "prsrm",
+                dark: true,
+                background: p.swamp,
+                foreground: p.snowy,
+                keyword: p.carro,
+                string: p.green,
+                number: p.grape,
+                comment: p.shado,
+                function: p.lemon,
+                // variable: ,
+                type: p.coral,
+                class: p.coral,
+                // constant: ,
+                operator: p.carro,
+                // invalid: ,
             },
         })
     },
