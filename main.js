@@ -50,7 +50,7 @@ acode.setPluginInit(
                 comment: p.shado,
                 function: p.lemon,
                 // variable: ,
-                type: p.coral,
+                type: p.ocean,
                 class: p.coral,
                 // constant: ,
                 operator: p.carro,
