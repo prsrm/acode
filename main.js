@@ -18,6 +18,9 @@ acode.setPluginInit(
                     dark: true,
                     styles: {
                         "&": { color: p.snowy, backgroundColor: p.swamp },
+                        ".cm-activeLine": {
+                            backgroundColor: p.swamp,
+                        }
                     },
                     highlightStyle: createHighlightStyle([
                         { tag: t.content, color: p.snowy },
